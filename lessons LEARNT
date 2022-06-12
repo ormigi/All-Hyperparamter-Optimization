@@ -1,0 +1,4 @@
+Lessons learnt:
+
+multiclss classification almost same with traditional classification
+if data changes, then the deployed model should have either parameters selected changed or creating a new model, based on the data, then  redeployment
