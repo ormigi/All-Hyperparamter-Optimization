@@ -2,3 +2,16 @@ Lessons learnt:
 
 multiclss classification almost same with traditional classification
 if data changes, then the deployed model should have either parameters selected changed or creating a new model, based on the data, then  redeployment
+recheck feeatures for correctness, e,g glucose can neverhave 0 values, so we replaced with the median tthose values; and not with mean, bcause if it has outliers, it may get impacted
+q: if using random forest, do we still have to use scaling of the data? not required, as random forrest uses decision trees, works on separating in branches and leaves; if but if youre using ANN,
+linear regression, logistic regression it will be required e.g
+define X= independent and y dependent features
+before TRAINING THE MODEL, or SCALING, you have to always do the TRAIN< TEST split, from sklearn  train_test_split
+import the radom forrest classifier with just 10 estimators instaed of 100
+check whether you have an imbalanced dataset  y.value_counts() if balanced continue with:
+manual hyperparameter tuning: confusion matrix, accuracy score, classification report
+
+
+
+
+
